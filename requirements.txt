@@ -1,0 +1,8 @@
+langchain
+langchain-core
+langchain-openai
+langchain-tavily
+langsmith
+tavily-python
+pillow
+python-dotenv
