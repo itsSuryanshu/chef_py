@@ -1,17 +1,22 @@
-#import base64
-#import io
+import base64
+import io
 import os
 from datetime import datetime, timezone
-#from pathlib import Path
+from pathlib import Path
 from pprint import pprint
 
 from dotenv import load_dotenv
 from langchain.agents import create_agent
 from langchain.messages import HumanMessage
 from langchain.tools import tool
-#from langchain_core.messages.content import create_image_block, create_text_block
 from langchain_tavily import TavilySearch
-#from PIL import Image
+from PIL import Image
+
+imgSrc = str | Path
+
+def encode_img_b64(src: imgSrc):
+    return None
+
 
 @tool
 def get_time_month() -> str:
